@@ -5,8 +5,8 @@ import turtle as t # import dependencies
 import time 
 
 ANGLE = 90 # define the angle
-LINE_HEIGHT = 1 # define the line height
-ITERATIONS = 2 # initialize the variable that keeps track of iterations from 2
+LINE_HEIGHT = 2 # define the line height
+ITERATIONS = 1 # initialize the variable that keeps track of iterations from 2
 MAX_ITERATIONS = 15 # define the maximum iteration 
 BACKGROUND = t.Screen().bgcolor('black') # get the background, and set it to black
 
@@ -62,3 +62,4 @@ seconds_elapsed = end - start
 minutes_elapsed = seconds_elapsed / 60
 print(f"Time taken to draw the fractal: {minutes_elapsed} minutes") # display the time elapsed
 t.done() # save the screen after ending the loop
+
