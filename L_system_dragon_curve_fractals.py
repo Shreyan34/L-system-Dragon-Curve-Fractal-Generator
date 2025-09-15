@@ -5,9 +5,10 @@ import turtle as t # import dependencies
 import time 
 
 ANGLE = 90 # define the angle
-LINE_HEIGHT = 2 # define the line height
-ITERATIONS = 1 # initialize the variable that keeps track of iterations from 2
+LINE_HEIGHT = 1 # define the line height
+ITERATIONS = 2 # initialize the variable that keeps track of iterations from 2
 MAX_ITERATIONS = 15 # define the maximum iteration 
+BACKGROUND = t.Screen().bgcolor('black') # get the background, and set it to black
 
 
 # a simple function that reverses a string and returns the reversed string
@@ -31,7 +32,7 @@ def draw(string):
     t.goto(-300, 100)
     t.pendown()
     t.speed(0)
-    t.color(['blue'])
+    t.color(['white']) # change the turtle pen colour to white
     for i in range(len(string)):
         if string[i] == "L":
             t.forward(LINE_HEIGHT)
